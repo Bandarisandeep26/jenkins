@@ -18,4 +18,9 @@ pipeline {
             }
         }
     }
+    post{
+        always{
+            echo "I always run Awesome"
+        }
+    }
 }
