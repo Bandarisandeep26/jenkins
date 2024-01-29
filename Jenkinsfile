@@ -1,4 +1,4 @@
-pipeline {
+pipeline{
     agent any
 
     stages {
@@ -25,6 +25,9 @@ pipeline {
         }
         success {
             echo 'I run when you are success'
+        }
+        failure {
+            echo 'I run when you failed'
         }
     }
 }
