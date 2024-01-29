@@ -1,6 +1,10 @@
-pipeline{
+pipeline {
     // agent any
-agent {Docker {image 'maven:3.8.8'}}
+   agent {
+        docker { 
+            image 'maven:3.8.8' 
+        }
+    }
 
     stages {
         stage('Build') {
